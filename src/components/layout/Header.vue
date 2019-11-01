@@ -1,6 +1,14 @@
 <template>
   <header class="header">
     <h1>TodoLists</h1>
+    <div id="nav">
+      <router-link to="/" class="nav">
+        Home
+      </router-link> |
+      <router-link to="/about" class="nav">
+        About
+      </router-link>
+    </div>
   </header>
 </template>
 
@@ -22,4 +30,9 @@ export default {
     padding-right: 5px;
     text-decoration: none;
   }
+
+  .nav {
+    color: white !important
+  }
+  
 </style>
